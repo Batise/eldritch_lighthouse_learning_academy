@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Group Courses - ELLA Language Academy</title>
+    <meta name="description" content="Join ELLA's premium group courses. Choose from General English, Exam Mastery, Dialogue & Culture Club, or Business Communication. Small classes, expert instruction, proven results.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        <div class="urgency-content">
+            <span class="urgency-icon">⚡</span>
+            <span class="urgency-text">Limited Time: Pre-Register Now & Save 10% - Only 100 Early-Bird Spots Left!</span>
+            <a href="pre-register.html" class="urgency-cta">Claim Your Spot →</a>
+        </div>
+        <button class="urgency-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="lighthouse-on-svgrepo-com-removebg-preview.png" alt="ELLA Logo" class="logo-image">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="private-tutoring.html" class="nav-link">Private Tutoring</a>
+                </li>
+                <li class="nav-item">
+                    <a href="group-courses.html" class="nav-link active">Group Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Group Courses Hero -->
+    <section class="group-courses-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Group Courses</h1>
+                <p>Join small, focused classes designed for maximum learning impact. Choose from our flagship programs tailored to your goals.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Max Students</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24-30</span>
+                        <span class="stat-label">Hours per Course</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">A2-C1</span>
+                        <span class="stat-label">All Levels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="course-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Learning Path</h2>
+                <p>Four specialized programs designed for different goals and learning styles</p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Course 1: General English Mastery -->
+                <div class="course-card flagship">
+                    <div class="course-badge">Flagship Program</div>
+                    <div class="course-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>General English Mastery</h3>
+                    <p class="course-description">Our balanced program focusing on integrated skills development (speaking, listening, reading, and writing).</p>
+                    
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-target"></i>
+                            <span>Build confidence across all four skills</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 sessions/week, 90 min each (3 hours/week)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 6 students (premium attention)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>8 weeks (24 total hours)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Levels: A2 (Elementary) - C1 (Advanced)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="course-pricing">
+                        <div class="price">$380 USD</div>
+                        <div class="price-detail">per 8-week course block</div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-course">Enroll Now</a>
+                </div>
+
+                <!-- Course 2: Exam Mastery Workshop -->
+                <div class="course-card exam">
+                    <div class="course-badge">High-Value Specialization</div>
+                    <div class="course-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Exam Mastery Workshop</h3>
+                    <p class="course-description">Designed for high-stakes test preparation (IELTS, TOEFL, Cambridge) with focused strategies and techniques.</p>
+                    
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-target"></i>
+                            <span>Master test strategies & academic vocabulary</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 sessions/week, 120 min each (4 hours/week)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 8 students (detailed feedback)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>6 weeks (24 total hours)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Levels: B2 (Upper Intermediate) - C1 (Advanced)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="course-pricing">
+                        <div class="price">$540 USD</div>
+                        <div class="price-detail">per 6-week course block</div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-course">Enroll Now</a>
+                </div>
+
+                <!-- Course 3: Dialogue & Culture Club -->
+                <div class="course-card conversational">
+                    <div class="course-badge">Flexible & Fun</div>
+                    <div class="course-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Dialogue & Culture Club</h3>
+                    <p class="course-description">Low-pressure conversational practice focusing on speaking fluency and cultural discussions. Zero homework.</p>
+                    
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-target"></i>
+                            <span>Increase fluency & expand vocabulary</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 sessions/week, 60 min each (2 hours/week)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 10 students (lively discussions)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Monthly subscription (min. 1 month)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Levels: B1 (Intermediate) and above</span>
+                        </div>
+                    </div>
+                    
+                    <div class="course-pricing">
+                        <div class="price">$165 USD</div>
+                        <div class="price-detail">per month (~8 hours)</div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-course">Start Subscription</a>
+                </div>
+
+                <!-- Course 4: Business Communication -->
+                <div class="course-card business">
+                    <div class="course-badge">Premium Professional</div>
+                    <div class="course-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Global Business Communication</h3>
+                    <p class="course-description">Master business language, negotiation, professional communication, and cross-cultural skills for career advancement.</p>
+                    
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-target"></i>
+                            <span>Master business language & presentations</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 sessions/week, 90 min each (3 hours/week)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 6 students (personalized coaching)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>10 weeks (30 total hours)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Levels: B2 (Upper Intermediate) and above</span>
+                        </div>
+                    </div>
+                    
+                    <div class="course-pricing">
+                        <div class="price">$695 USD</div>
+                        <div class="price-detail">per 10-week course block</div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-course">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Group Learning -->
+    <section class="why-group-learning">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Group Learning with ELLA?</h2>
+                <p>Experience the perfect balance of personalized attention and collaborative learning</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Small Class Sizes</h3>
+                    <p>Maximum 6-10 students ensures personalized attention and active participation for everyone.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Peer Learning</h3>
+                    <p>Learn from classmates, practice conversations, and build confidence in a supportive environment.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Structured Progress</h3>
+                    <p>Clear learning objectives, regular assessments, and measurable progress tracking.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost-Effective</h3>
+                    <p>Premium quality instruction at affordable group rates, starting from $15.83/hour.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Cultural Exchange</h3>
+                    <p>Meet learners from around the world and experience diverse perspectives and cultures.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Multiple time slots available to fit your schedule and time zone preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <div class="form-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Ready to Start Your Group Course?</h3>
+                    <p>Get personalized recommendations and secure your spot in the perfect course for your goals</p>
+                </div>
+                
+                <form class="premium-form" action="https://formsubmit.co/gabriel.sg.sebastian@gmail.com" method="POST">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_confirmation" value="false">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New Group Course Inquiry - ELLA">
+                    <input type="hidden" name="_next" value="https://eldritch-lighthouse.com/group-courses.html?success=true">
+                    
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h4><i class="fas fa-user"></i> Your Information</h4>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="name">Full Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user input-icon"></i>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                    <span class="required-star">*</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                    <span class="required-star">*</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-phone input-icon"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Interest Section -->
+                    <div class="form-section">
+                        <h4><i class="fas fa-graduation-cap"></i> Course Preferences</h4>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="course_interest">Interested Course</label>
+                                <div class="select-wrapper">
+                                    <select id="course_interest" name="course_interest" required>
+                                        <option value="">Select your preferred course...</option>
+                                        <option value="general-english-mastery">🎓 General English Mastery ($380/8 weeks)</option>
+                                        <option value="exam-mastery-workshop">🏆 Exam Mastery Workshop ($540/6 weeks)</option>
+                                        <option value="dialogue-culture-club">💬 Dialogue & Culture Club ($165/month)</option>
+                                        <option value="business-communication">💼 Global Business Communication ($695/10 weeks)</option>
+                                        <option value="not-sure">❓ Not sure yet - need recommendations</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                    <span class="required-star">*</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="english_level">Current English Level</label>
+                                <div class="select-wrapper">
+                                    <select id="english_level" name="english_level">
+                                        <option value="">Select your level...</option>
+                                        <option value="A1">🌱 A1 - Beginner</option>
+                                        <option value="A2">🌿 A2 - Elementary</option>
+                                        <option value="B1">🌳 B1 - Intermediate</option>
+                                        <option value="B2">🏆 B2 - Upper Intermediate</option>
+                                        <option value="C1">🎓 C1 - Advanced</option>
+                                        <option value="C2">👑 C2 - Proficiency</option>
+                                        <option value="unknown">❓ Not sure</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="time_availability">Preferred Day/Time Availability</label>
+                                <div class="select-wrapper">
+                                    <select id="time_availability" name="time_availability">
+                                        <option value="">When are you available...</option>
+                                        <option value="weekday-morning">🌅 Weekday Mornings (8AM-12PM)</option>
+                                        <option value="weekday-afternoon">☀️ Weekday Afternoons (12PM-5PM)</option>
+                                        <option value="weekday-evening">🌆 Weekday Evenings (5PM-9PM)</option>
+                                        <option value="weekend-morning">🌅 Weekend Mornings (8AM-12PM)</option>
+                                        <option value="weekend-afternoon">☀️ Weekend Afternoons (12PM-5PM)</option>
+                                        <option value="weekend-evening">🌆 Weekend Evenings (5PM-9PM)</option>
+                                        <option value="flexible-all">📅 Flexible - Any time works</option>
+                                        <option value="business-hours">💼 Business Hours Only (9AM-5PM)</option>
+                                        <option value="evening-only">🌙 Evenings Only (After 6PM)</option>
+                                        <option value="weekend-only">🗓️ Weekends Only</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="start_preference">Preferred Start Date</label>
+                                <div class="select-wrapper">
+                                    <select id="start_preference" name="start_preference">
+                                        <option value="">When would you like to start...</option>
+                                        <option value="asap">⚡ As soon as possible</option>
+                                        <option value="next-month">📅 Next month</option>
+                                        <option value="in-2-months">🗓️ In 2 months</option>
+                                        <option value="flexible">📅 Flexible - depends on schedule</option>
+                                        <option value="specific-date">📝 I have a specific date in mind</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Goals Section -->
+                    <div class="form-section">
+                        <h4><i class="fas fa-target"></i> Your Learning Goals</h4>
+                        <div class="textarea-group">
+                            <label for="goals">Learning Goals & Timeline</label>
+                            <div class="textarea-wrapper">
+                                <textarea id="goals" name="goals" rows="4" placeholder="What are your English learning goals? Are you preparing for exams, improving for work, or personal development? What's your timeline? The more detail you provide, the better we can recommend the perfect course for you."></textarea>
+                                <i class="fas fa-bullseye textarea-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Section -->
+                    <div class="form-submit-section">
+                        <button type="submit" class="premium-submit-btn">
+                            <span class="btn-content">
+                                <i class="fas fa-rocket"></i>
+                                Get My Course Recommendation
+                            </span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        
+                        <div class="form-guarantees">
+                            <div class="guarantee-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Response within 24 hours</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-shield-check"></i>
+                                <span>100% secure & confidential</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Free consultation included</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (shown via URL parameter) -->
+    <div id="success-message" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--color-bg-primary); padding: var(--spacing-xl); border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); border: 2px solid var(--color-primary); z-index: 10000; max-width: 500px; text-align: center;">
+        <div style="color: var(--color-primary); font-size: 3rem; margin-bottom: var(--spacing-md);">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 style="color: var(--color-text-primary); margin-bottom: var(--spacing-sm);">Course Inquiry Sent!</h3>
+        <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">Thank you for your interest in our group courses! We'll contact you within 24 hours with your personalized course recommendation and enrollment details.</p>
+        <button onclick="hideSuccessMessage()" style="background: var(--color-primary); color: white; border: none; padding: var(--spacing-sm) var(--spacing-lg); border-radius: var(--radius-md); cursor: pointer;">Close</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="lighthouse-on-svgrepo-com-removebg-preview.png" alt="ELLA Logo" class="footer-logo-image">
+                </div>
+                    <p>Eldritch Lighthouse Language Academy - Guiding you to English mastery since 2020</p>
+                    <div class="social-links">
+                        <a href="#facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#linkedin" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="group-courses.html">Group Courses</a></li>
+                        <li><a href="private-tutoring.html">Private Tutoring</a></li>
+                        <li><a href="#levels">English Levels</a></li>
+                        <li><a href="#exam-prep">Exam Preparation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="pre-register.html">Pre-Register</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#support">Student Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="imprint.html">Imprint</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eldritch Lighthouse Language Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Show success message if URL contains success parameter
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                document.getElementById('success-message').style.display = 'block';
+            }
+        });
+        
+        function hideSuccessMessage() {
+            document.getElementById('success-message').style.display = 'none';
+            // Remove success parameter from URL
+            const url = new URL(window.location);
+            url.searchParams.delete('success');
+            window.history.replaceState({}, document.title, url);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
