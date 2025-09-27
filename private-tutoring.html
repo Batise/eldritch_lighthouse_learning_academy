@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Private Tutoring - ELLA</title>
+    <meta name="description" content="Personalized English tutoring with flexible pricing. Individual or group sessions from $30/hour. Expert tutors, your materials, proven results.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        <div class="urgency-content">
+            <span class="urgency-icon">⚡</span>
+            <span class="urgency-text">Limited Time: Pre-Register Now & Save 10% - Only 100 Early-Bird Spots Left!</span>
+            <a href="pre-register.html" class="urgency-cta">Claim Your Spot →</a>
+        </div>
+        <button class="urgency-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-lighthouse nav-icon"></i>
+                <span class="logo-text">Eldritch Lighthouse Language Academy</span>
+                <span class="logo-acronym">(ELLA)</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="private-tutoring.html" class="nav-link">Private Tutoring</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#group-courses" class="nav-link">Group Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Private Tutoring Hero -->
+    <section class="private-tutoring-hero">
+        <div class="container">
+            <div style="padding-top: 120px; text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 style="color: var(--color-text-primary); margin-bottom: 2rem;">Private English Tutoring</h1>
+                <p style="color: var(--color-text-secondary); font-size: 1.3rem; margin-bottom: 3rem;">Personalized one-on-one or small group sessions designed around your specific needs and goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Individual Tutoring -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Individual Tutoring</h3>
+                        <div class="pricing-badge">Most Popular</div>
+                    </div>
+                    <div class="pricing-options">
+                        <div class="pricing-option">
+                            <h4>Prepaid 10-Hour Package</h4>
+                            <div class="price">from $600</div>
+                            <p class="price-note">($60/hour when prepaid)</p>
+                        </div>
+                        <div class="pricing-divider">Or</div>
+                        <div class="pricing-option">
+                            <h4>Pay As You Go</h4>
+                            <div class="price">$70 per hour</div>
+                            <p class="price-note">billed fortnightly</p>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Weekly sessions</li>
+                            <li><i class="fas fa-check"></i> Personalised sessions to suit you</li>
+                            <li><i class="fas fa-check"></i> We teach your English texts</li>
+                            <li><i class="fas fa-check"></i> Resources (essays, notes and study guides)</li>
+                        </ul>
+                    </div>
+                    <a href="#contact-form" class="btn-primary pricing-cta">Get Started</a>
+                </div>
+
+                <!-- Group of 2 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Group of 2</h3>
+                    </div>
+                    <div class="pricing-options">
+                        <div class="pricing-option">
+                            <h4>Prepaid 10-Hour Package</h4>
+                            <div class="price">from $350 per student</div>
+                            <p class="price-note">($35/hour per student when prepaid)</p>
+                        </div>
+                        <div class="pricing-divider">Or</div>
+                        <div class="pricing-option">
+                            <h4>Pay As You Go</h4>
+                            <div class="price">$40/hr/student</div>
+                            <p class="price-note">billed fortnightly</p>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Weekly sessions</li>
+                            <li><i class="fas fa-check"></i> Personalised sessions to suit you</li>
+                            <li><i class="fas fa-check"></i> We teach your English texts</li>
+                            <li><i class="fas fa-check"></i> Resources (essays, notes and study guides)</li>
+                        </ul>
+                    </div>
+                    <a href="#contact-form" class="btn-primary pricing-cta">Get Started</a>
+                </div>
+
+                <!-- Group of 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Group of 3</h3>
+                        <div class="pricing-badge best-value">Best Value</div>
+                    </div>
+                    <div class="pricing-options">
+                        <div class="pricing-option">
+                            <h4>Prepaid 10-Hour Package</h4>
+                            <div class="price">from $250 per student</div>
+                            <p class="price-note">($25/hour per student when prepaid)</p>
+                        </div>
+                        <div class="pricing-divider">Or</div>
+                        <div class="pricing-option">
+                            <h4>Pay As You Go</h4>
+                            <div class="price">$30/hr/student</div>
+                            <p class="price-note">billed fortnightly</p>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Weekly sessions</li>
+                            <li><i class="fas fa-check"></i> Personalised sessions to suit you</li>
+                            <li><i class="fas fa-check"></i> We teach your English texts</li>
+                            <li><i class="fas fa-check"></i> Resources (essays, notes and study guides)</li>
+                        </ul>
+                    </div>
+                    <a href="#contact-form" class="btn-primary pricing-cta">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="tutoring-cta">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <h2 style="color: var(--color-text-on-blue); margin-bottom: 1.5rem;">Take Control Of Your Learning Today</h2>
+                <p style="color: var(--color-text-on-blue); font-size: 1.2rem; margin-bottom: 2rem;">Ready to start your personalized English journey? Fill out the form below and we'll contact you within 24 hours to discuss your goals and schedule your first session.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Contact Form -->
+    <section class="premium-contact-form" id="contact-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <div class="form-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Get Your Personalized Tutoring Plan</h3>
+                    <p>Tell us about your goals and we'll create a custom learning path just for you</p>
+                </div>
+                
+                <form class="premium-form" action="mailto:info@eldritch-lighthouse.com" method="post" enctype="text/plain">
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h4><i class="fas fa-user"></i> Personal Information</h4>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="name">Full Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user input-icon"></i>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                    <span class="required-star">*</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                    <span class="required-star">*</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-phone input-icon"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Preferences Section -->
+                    <div class="form-section">
+                        <h4><i class="fas fa-graduation-cap"></i> Learning Preferences</h4>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="tutoring_type">Preferred Tutoring Option</label>
+                                <div class="select-wrapper">
+                                    <select id="tutoring_type" name="tutoring_type" required>
+                                        <option value="">Choose your preference...</option>
+                                        <option value="individual">💯 Individual Tutoring ($60-70/hr)</option>
+                                        <option value="group-2">👥 Group of 2 ($35-40/hr per student)</option>
+                                        <option value="group-3">🎯 Group of 3 ($25-30/hr per student)</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                    <span class="required-star">*</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="level">Current English Level</label>
+                                <div class="select-wrapper">
+                                    <select id="level" name="level">
+                                        <option value="">Select your level...</option>
+                                        <option value="A1">🌱 A1 - Beginner</option>
+                                        <option value="A2">🌿 A2 - Elementary</option>
+                                        <option value="B1">🌳 B1 - Intermediate</option>
+                                        <option value="B2">🏆 B2 - Upper Intermediate</option>
+                                        <option value="C1">🎓 C1 - Advanced</option>
+                                        <option value="C2">👑 C2 - Proficiency</option>
+                                        <option value="unknown">❓ Not sure</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="payment_preference">Payment Preference</label>
+                                <div class="select-wrapper">
+                                    <select id="payment_preference" name="payment_preference">
+                                        <option value="">Choose payment style...</option>
+                                        <option value="prepaid">💰 Prepaid Package (Save money)</option>
+                                        <option value="paygo">📅 Pay As You Go (More flexible)</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Goals & Schedule Section -->
+                    <div class="form-section">
+                        <h4><i class="fas fa-target"></i> Goals & Schedule</h4>
+                        <div class="textarea-group">
+                            <label for="goals">Learning Goals & Specific Needs</label>
+                            <div class="textarea-wrapper">
+                                <textarea id="goals" name="goals" rows="4" placeholder="What are your English learning goals? Are you preparing for exams, improving business communication, working on specific skills, or have particular materials you'd like to study? The more detail you provide, the better we can tailor your learning experience."></textarea>
+                                <i class="fas fa-bullseye textarea-icon"></i>
+                            </div>
+                        </div>
+                        <div class="textarea-group">
+                            <label for="schedule">Preferred Schedule</label>
+                            <div class="textarea-wrapper">
+                                <textarea id="schedule" name="schedule" rows="3" placeholder="When works best for you? (e.g., weekday evenings, weekend mornings, specific days/times, how often you'd like to meet)"></textarea>
+                                <i class="fas fa-calendar-alt textarea-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Section -->
+                    <div class="form-submit-section">
+                        <button type="submit" class="premium-submit-btn">
+                            <span class="btn-content">
+                                <i class="fas fa-rocket"></i>
+                                Get My Personalized Learning Plan
+                            </span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        
+                        <div class="form-guarantees">
+                            <div class="guarantee-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Response within 24 hours</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-shield-check"></i>
+                                <span>100% secure & confidential</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Free consultation included</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-lighthouse"></i>
+                    <span>Eldritch Lighthouse Language Academy</span>
+                </div>
+                    <p>Eldritch Lighthouse Language Academy - Guiding you to English mastery since 2020</p>
+                    <div class="social-links">
+                        <a href="#facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#linkedin" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="private-tutoring.html">Private Tutoring</a></li>
+                        <li><a href="#group-courses">Group Courses</a></li>
+                        <li><a href="#business">Business English</a></li>
+                        <li><a href="#exam">Exam Preparation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#technical">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact & Legal</h4>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:info@eldritch-lighthouse.com">info@eldritch-lighthouse.com</a></li>
+                        <li><a href="imprint.html">Imprint (Impressum)</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#refund">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eldritch Lighthouse Language Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
