@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium-Nachhilfe für Internationale Schulen (Deutsch/Schweiz) | ELLA</title>
+    <meta name="description" content="Spezialisierte Premium-Nachhilfe für Schüler deutscher und Schweizer Schulen in CDMX. Muttersprachliche Lehrer, Notengarantie, transparente Preise.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Premium-Nachhilfe für Internationale Schulen (Deutsch/Schweiz)">
+    <meta property="og:description" content="Spezialisierte Premium-Nachhilfe für Schüler deutscher und Schweizer Schulen in CDMX. Muttersprachliche Lehrer, Notengarantie.">
+    <meta property="og:url" content="https://eldritch-lighthouse.com/nachhilfe-internationale-schulen.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ELLA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium-Nachhilfe für Internationale Schulen (Deutsch/Schweiz)">
+    <meta name="twitter:description" content="Spezialisierte Premium-Nachhilfe für Schüler deutscher und Schweizer Schulen in CDMX. Muttersprachliche Lehrer, Notengarantie.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Nachhilfe Page Specific Styles */
+        .nachhilfe-page {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Navigation Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .nav-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+        
+        .nav-link {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #667eea;
+        }
+        
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0 80px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo img {
+            width: 35px;
+            height: 35px;
+            filter: brightness(0) invert(1);
+        }
+        
+        .main-headline {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .sub-headline {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        /* Problem/Solution Section */
+        .problem-solution {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .problem-solution-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .problem-card, .solution-card {
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .problem-card {
+            background: #fff5f5;
+            color: #333;
+            border: 2px solid #ff6b6b;
+        }
+        
+        .solution-card {
+            background: #f0f8ff;
+            border: 2px solid #4a90e2;
+            color: #333;
+        }
+        
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .solution-card .card-icon {
+            background: #4a90e2;
+            color: white;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .card-content {
+            text-align: center;
+            line-height: 1.7;
+        }
+        
+        /* Teachers Section */
+        .teachers-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .teacher-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s ease;
+        }
+        
+        .teacher-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .teacher-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        
+        .teacher-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .teacher-title {
+            font-size: 1rem;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .teacher-qualifications {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .qualification-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .qualification-item i {
+            color: #667eea;
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        .teacher-specialization {
+            font-style: italic;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Pricing Section */
+        .pricing-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .pricing-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card.featured {
+            background: white;
+            border: 3px solid #28a745;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.2);
+        }
+        
+        .pricing-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #28a745;
+        }
+        
+        .price-period {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+            color: #333;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features i {
+            margin-right: 10px;
+            color: #28a745;
+        }
+        
+        /* Language Toggle */
+        .language-toggle {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        .lang-btn {
+            background: none;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 60px 0;
+        }
+        
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #667eea;
+        }
+        
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .benefit-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .benefit-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Final CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        
+        .guarantee-box {
+            background: white;
+            border: 2px solid #28a745;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .guarantee-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #28a745;
+        }
+        
+        .guarantee-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #667eea;
+        }
+        
+        .footer-logo {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 10px;
+        }
+        
+        .footer-separator {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 30px 0;
+        }
+        
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .footer-bottom-section h4 {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .footer-bottom-section ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-bottom-section ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-bottom-section ul li a:hover {
+            color: #667eea;
+        }
+        
+        .copyright {
+            color: #95a5a6;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: 20px 0;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .main-headline {
+                font-size: 2.2rem;
+            }
+            
+            .sub-headline {
+                font-size: 1.1rem;
+            }
+            
+            .problem-solution-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .teachers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .language-toggle {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                display: inline-block;
+            }
+            
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-bottom-section ul {
+                justify-content: center;
+            }
+        }
+        
+        /* Typography Improvements */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .text-highlight {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .text-guarantee {
+            color: #ffd700;
+            font-weight: 600;
+        }
+        
+        /* Smooth Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="nachhilfe-page">
+        <!-- Header Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo" aria-label="ELLA Homepage">
+                    <img src="lighthouse-on-svgrepo-com-removebg-preview.png" alt="ELLA Lighthouse Logo" class="logo-image">
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="private-tutoring.html" class="nav-link">Private Tutoring</a></li>
+                    <li><a href="group-courses.html" class="nav-link">Group Courses</a></li>
+                    <li><a href="contact.html" class="nav-link">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <button class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+        </div>
+
+        <!-- Header Section -->
+        <section class="page-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="lighthouse-on-svgrepo-com-removebg-preview.png" alt="ELLA Logo">
+                </div>
+                
+                <h1 class="main-headline" data-de="Entlastung für Eltern, Notengarantie für Schüler" data-es="Alivio para Padres, Garantía de Calificaciones para Estudiantes">
+                    Entlastung für Eltern, Notengarantie für Schüler
+                </h1>
+                
+                <p class="sub-headline" data-de="Spezialisierte Premium-Nachhilfe für Schüler der Deutschen & Schweizer Schulen in CDMX. Unsere Lehrer kennen das Curriculum und helfen Ihrem Kind zu Top-Noten." data-es="Tutoría premium especializada para estudiantes de escuelas Alemanas y Suizas en CDMX. Nuestros maestros conocen el currículo y ayudan a su hijo a obtener las mejores calificaciones.">
+                    Spezialisierte Premium-Nachhilfe für Schüler der Deutschen & Schweizer Schulen in CDMX. Unsere Lehrer kennen das Curriculum und helfen Ihrem Kind zu Top-Noten.
+                </p>
+                
+                <a href="#beratung" class="cta-button" data-de="Kostenloses Beratungsgespräch buchen" data-es="Reservar Consulta Gratuita">
+                    Kostenloses Beratungsgespräch buchen
+                </a>
+            </div>
+        </section>
+
+        <!-- Problem/Solution Section -->
+        <section class="problem-solution">
+            <div class="container">
+                <h2 class="section-title" data-de="Das Problem kennen wir. Die Lösung haben wir." data-es="Conocemos el problema. Tenemos la solución.">
+                    Das Problem kennen wir. Die Lösung haben wir.
+                </h2>
+                
+                <div class="problem-solution-grid">
+                    <div class="problem-card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="card-title" data-de="Das Problem" data-es="El Problema">
+                            Das Problem
+                        </h3>
+                        <div class="card-content" data-de="Die Fächer sind komplex, die Zeit ist knapp. Der Lehrplan des Colegio Alemán ist anspruchsvoll und unterscheidet sich deutlich vom mexikanischen Schulsystem. Eltern haben oft nicht die Zeit oder das Fachwissen, um ihrem Kind optimal zu helfen." data-es="Las materias son complejas, el tiempo es limitado. El plan de estudios del Colegio Alemán es exigente y difiere significativamente del sistema escolar mexicano. Los padres a menudo no tienen el tiempo o el conocimiento especializado para ayudar óptimamente a su hijo.">
+                            Die Fächer sind komplex, die Zeit ist knapp. Der Lehrplan des Colegio Alemán ist anspruchsvoll und unterscheidet sich deutlich vom mexikanischen Schulsystem. Eltern haben oft nicht die Zeit oder das Fachwissen, um ihrem Kind optimal zu helfen.
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="card-title" data-de="Unsere Lösung" data-es="Nuestra Solución">
+                            Unsere Lösung
+                        </h3>
+                        <div class="card-content" data-de="Unsere Lehrer sind nicht nur Muttersprachler; sie kennen das spezifische Schulsystem. Sie haben Erfahrung mit dem deutschen Curriculum und verstehen die Anforderungen des Colegio Alemán. Mit unserer <span class='text-guarantee'>Notengarantie</span> sorgen wir dafür, dass Ihr Kind seine Ziele erreicht." data-es="Nuestros maestros no solo son nativos; conocen el sistema escolar específico. Tienen experiencia con el currículum alemán y entienden los requisitos del Colegio Alemán. Con nuestra <span class='text-guarantee'>garantía de calificaciones</span> nos aseguramos de que su hijo alcance sus objetivos.">
+                            Unsere Lehrer sind nicht nur Muttersprachler; sie kennen das spezifische Schulsystem. Sie haben Erfahrung mit dem deutschen Curriculum und verstehen die Anforderungen des Colegio Alemán. Mit unserer <span class="text-guarantee">Notengarantie</span> sorgen wir dafür, dass Ihr Kind seine Ziele erreicht.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teachers Section -->
+        <section class="teachers-section">
+            <div class="container">
+                <h2 class="section-title" data-de="Unsere spezialisierten Lehrer" data-es="Nuestros Maestros Especializados">
+                    Unsere spezialisierten Lehrer
+                </h2>
+                
+                <p class="section-subtitle" data-de="Lernen Sie unsere Experten kennen, die auf internationale Schulsysteme (Deutsch/Schweiz) spezialisiert sind" data-es="Conozca a nuestros expertos especializados en sistemas escolares internacionales (Alemania/Suiza)">
+                    Lernen Sie unsere Experten kennen, die auf internationale Schulsysteme (Deutsch/Schweiz) spezialisiert sind
+                </p>
+                
+                <div class="teachers-grid">
+                    <div class="teacher-card fade-in">
+                        <div class="teacher-photo">
+                            <img src="lighthouse-on-svgrepo-com-removebg-preview.png" alt="Dr. Sarah Müller - Mathematik & Physik Spezialistin" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <h3 class="teacher-name" data-de="Dr. Sarah Müller" data-es="Dra. Sarah Müller">
+                            Dr. Sarah Müller
+                        </h3>
+                        <p class="teacher-title" data-de="Mathematik & Physik Spezialistin" data-es="Especialista en Matemáticas y Física">
+                            Mathematik & Physik Spezialistin
+                        </p>
+                        
+                        <div class="teacher-qualifications">
+                            <div class="qualification-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span data-de="Promotion in Mathematik, TU München" data-es="Doctorado en Matemáticas, TU Munich">
+                                    Promotion in Mathematik, TU München
+                                </span>
+                            </div>
+                            <div class="qualification-item">
+                                <i class="fas fa-certificate"></i>
+                                <span data-de="Zertifizierte Lehrerin (Deutschland)" data-es="Maestra Certificada (Alemania)">
+                                    Zertifizierte Lehrerin (Deutschland)
+                                </span>
+                            </div>
+                            <div class="qualification-item">
+                                <i class="fas fa-clock"></i>
+                                <span data-de="8 Jahre Erfahrung mit Colegio Alemán" data-es="8 años de experiencia con Colegio Alemán">
+                                    8 Jahre Erfahrung mit Colegio Alemán
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <p class="teacher-specialization" data-de="Spezialisiert auf Abiturvorbereitung und höhere Mathematik. Hilft Schülern dabei, komplexe mathematische Konzepte zu verstehen und erfolgreich Prüfungen zu bestehen." data-es="Especializada en preparación para Abitur y matemáticas avanzadas. Ayuda a los estudiantes a entender conceptos matemáticos complejos y aprobar exitosamente los exámenes.">
+                            Spezialisiert auf Abiturvorbereitung und höhere Mathematik. Hilft Schülern dabei, komplexe mathematische Konzepte zu verstehen und erfolgreich Prüfungen zu bestehen.
+                        </p>
+                    </div>
+                    
+                    <div class="teacher-card fade-in">
+                        <div class="teacher-photo">
+                            <img src="lighthouse-on-svgrepo-com-removebg-preview.png" alt="Prof. Michael Weber - Deutsch & Geschichte Experte" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <h3 class="teacher-name" data-de="Prof. Michael Weber" data-es="Prof. Michael Weber">
+                            Prof. Michael Weber
+                        </h3>
+                        <p class="teacher-title" data-de="Deutsch & Geschichte Experte" data-es="Experto en Alemán e Historia">
+                            Deutsch & Geschichte Experte
+                        </p>
+                        
+                        <div class="teacher-qualifications">
+                            <div class="qualification-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span data-de="Master in Germanistik, Universität Berlin" data-es="Maestría en Germanística, Universidad de Berlín">
+                                    Master in Germanistik, Universität Berlin
+                                </span>
+                            </div>
+                            <div class="qualification-item">
+                                <i class="fas fa-certificate"></i>
+                                <span data-de="DAAD Zertifikat für Deutschlehrer" data-es="Certificado DAAD para Maestros de Alemán">
+                                    DAAD Zertifikat für Deutschlehrer
+                                </span>
+                            </div>
+                            <div class="qualification-item">
+                                <i class="fas fa-clock"></i>
+                                <span data-de="12 Jahre Erfahrung in Mexiko" data-es="12 años de experiencia en México">
+                                    12 Jahre Erfahrung in Mexiko
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <p class="teacher-specialization" data-de="Experte für deutsche Literatur und Geschichte. Spezialisiert auf Sprachförderung und kulturelle Bildung. Hilft Schülern dabei, die deutsche Sprache und Kultur zu verstehen." data-es="Experto en literatura e historia alemana. Especializado en fomento del idioma y educación cultural. Ayuda a los estudiantes a entender el idioma y la cultura alemana.">
+                            Experte für deutsche Literatur und Geschichte. Spezialisiert auf Sprachförderung und kulturelle Bildung. Hilft Schülern dabei, die deutsche Sprache und Kultur zu verstehen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title" data-de="Warum ELLA die richtige Wahl ist" data-es="Por qué ELLA es la elección correcta">
+                    Warum ELLA die richtige Wahl ist
+                </h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item fade-in">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="benefit-title" data-de="Notengarantie" data-es="Garantía de Calificaciones">
+                            Notengarantie
+                        </h3>
+                        <p class="benefit-description" data-de="Bei 10-Stunden-Paketen garantieren wir messbare Notenverbesserung in 6 Wochen oder 5 Gratis-Stunden als Gutschrift." data-es="En paquetes de 10 horas garantizamos mejora medible en calificaciones en 6 semanas o 5 horas gratis como crédito.">
+                            Bei 10-Stunden-Paketen garantieren wir messbare Notenverbesserung in 6 Wochen oder 5 Gratis-Stunden als Gutschrift.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-item fade-in">
+                        <div class="benefit-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="benefit-title" data-de="Nachhilfe zu Hause" data-es="Tutoría en Casa">
+                            Nachhilfe zu Hause
+                        </h3>
+                        <p class="benefit-description" data-de="Unser Lehrer kommt zu Ihnen nach Hause - keine Zeitverluste durch Anfahrten." data-es="Nuestro maestro viene a su casa - no hay pérdida de tiempo por viajes.">
+                            Unser Lehrer kommt zu Ihnen nach Hause - keine Zeitverluste durch Anfahrten.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-item fade-in">
+                        <div class="benefit-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="benefit-title" data-de="Flexible Termine" data-es="Horarios Flexibles">
+                            Flexible Termine
+                        </h3>
+                        <p class="benefit-description" data-de="Wir passen uns Ihrem Zeitplan an - auch abends und am Wochenende möglich." data-es="Nos adaptamos a su horario - también es posible por las tardes y los fines de semana.">
+                            Wir passen uns Ihrem Zeitplan an - auch abends und am Wochenende möglich.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-item fade-in">
+                        <div class="benefit-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="benefit-title" data-de="Curriculum-spezifisch" data-es="Específico del Currículum">
+                            Curriculum-spezifisch
+                        </h3>
+                        <p class="benefit-description" data-de="Unsere Lehrer kennen das spezifische Curriculum des Colegio Alemán." data-es="Nuestros maestros conocen el currículum específico del Colegio Alemán.">
+                            Unsere Lehrer kennen das spezifische Curriculum des Colegio Alemán.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="container">
+                <h2 class="section-title" data-de="Transparente Preise" data-es="Precios Transparentes">
+                    Transparente Preise
+                </h2>
+                
+                <p class="section-subtitle" data-de="Keine versteckten Kosten - was Sie sehen, ist was Sie bezahlen" data-es="Sin costos ocultos - lo que ves es lo que pagas">
+                    Keine versteckten Kosten - was Sie sehen, ist was Sie bezahlen
+                </p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card fade-in">
+                        <h3 class="pricing-title" data-de="Einzelstunde" data-es="Hora Individual">
+                            Einzelstunde
+                        </h3>
+                        <div class="price">1.250</div>
+                        <div class="price-period" data-de="MXN pro Stunde" data-es="MXN por hora">
+                            MXN pro Stunde
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> <span data-de="60 Minuten Einzelunterricht" data-es="60 minutos de clase individual">60 Minuten Einzelunterricht</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="Zu Hause oder online" data-es="En casa o en línea">Zu Hause oder online</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="Spezialisierte Lehrer" data-es="Maestros especializados">Spezialisierte Lehrer</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="Flexible Termine" data-es="Horarios flexibles">Flexible Termine</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card featured fade-in">
+                        <h3 class="pricing-title" data-de="10-Stunden Paket" data-es="Paquete de 10 Horas">
+                            10-Stunden Paket
+                        </h3>
+                        <div class="price">12.500</div>
+                        <div class="price-period" data-de="MXN (10 Stunden)" data-es="MXN (10 horas)">
+                            MXN (10 Stunden)
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> <span data-de="Inkl. 1 Stunde Gratis-Beratung" data-es="Incluye 1 hora de Consulta Gratuita">Inkl. 1 Stunde Gratis-Beratung</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="6 Monate gültig" data-es="Válido por 6 meses">6 Monate gültig</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="Notengarantie inklusive" data-es="Garantía de calificaciones incluida">Notengarantie inklusive</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="Priorität bei Terminen" data-es="Prioridad en citas">Priorität bei Terminen</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <h3 class="pricing-title" data-de="20-Stunden Paket" data-es="Paquete de 20 Horas">
+                            20-Stunden Paket
+                        </h3>
+                        <div class="price">22.500</div>
+                        <div class="price-period" data-de="MXN (20 Stunden)" data-es="MXN (20 horas)">
+                            MXN (20 Stunden)
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> <span data-de="Ersparnis: 7.500 MXN" data-es="Ahorro: 7,500 MXN">Ersparnis: 7.500 MXN</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="12 Monate gültig" data-es="Válido por 12 meses">12 Monate gültig</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="Kostenloses Beratungsgespräch" data-es="Consulta gratuita">Kostenloses Beratungsgespräch</span></li>
+                            <li><i class="fas fa-check"></i> <span data-de="Persönlicher Lernplan" data-es="Plan de estudios personalizado">Persönlicher Lernplan</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta" id="beratung">
+            <div class="container">
+                <h2 class="section-title" data-de="Starten Sie noch heute" data-es="Comience Hoy Mismo">
+                    Starten Sie noch heute
+                </h2>
+                
+                <p class="section-subtitle" data-de="Buchen Sie Ihr kostenloses 20-minütiges Beratungsgespräch und lassen Sie uns gemeinsam den besten Plan für Ihr Kind entwickeln" data-es="Reserve su consulta gratuita de 20 minutos y desarrollemos juntos el mejor plan para su hijo">
+                    Buchen Sie Ihr kostenloses 20-minütiges Beratungsgespräch und lassen Sie uns gemeinsam den besten Plan für Ihr Kind entwickeln
+                </p>
+                
+                <div class="guarantee-box">
+                    <h3 class="guarantee-title" data-de="Unsere Notengarantie" data-es="Nuestra Garantía de Calificaciones">
+                        Unsere Notengarantie
+                    </h3>
+                    <p data-de="Bei Buchung des 10-Stunden-Pakets garantieren wir eine messbare Notenverbesserung in den ersten 6 Wochen. Sollten die Noten in diesem Zeitraum nicht verbessert werden, erhalten Sie eine Gutschrift für die nächsten 5 Stunden Nachhilfe - ohne weitere Kosten für Sie." data-es="Al reservar el paquete de 10 horas, garantizamos una mejora medible en las calificaciones en las primeras 6 semanas. Si las calificaciones no mejoran en este período, recibirá un crédito para las siguientes 5 horas de tutoría - sin costos adicionales para usted.">
+                        Bei Buchung des 10-Stunden-Pakets garantieren wir eine messbare Notenverbesserung in den ersten 6 Wochen. Sollten die Noten in diesem Zeitraum nicht verbessert werden, erhalten Sie eine Gutschrift für die nächsten 5 Stunden Nachhilfe - ohne weitere Kosten für Sie.
+                    </p>
+                </div>
+                
+                <a href="contact.html" class="cta-button" data-de="Kostenloses Beratungsgespräch buchen" data-es="Reservar Consulta Gratuita">
+                    Kostenloses Beratungsgespräch buchen
+                </a>
+                
+                <p style="margin-top: 30px; opacity: 0.8; font-size: 0.9rem;" data-de="✓ 20 Minuten kostenlos ✓ Keine Verpflichtungen ✓ Sofortige Terminvergabe" data-es="✓ 20 minutos gratis ✓ Sin compromisos ✓ Asignación inmediata de cita">
+                    ✓ 20 Minuten kostenlos ✓ Keine Verpflichtungen ✓ Sofortige Terminvergabe
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <a href="index.html" class="footer-logo" aria-label="ELLA Homepage">
+                            <img src="lighthouse-on-svgrepo-com-removebg-preview.png" alt="ELLA Lighthouse Logo" class="footer-logo-image">
+                        </a>
+                        <p data-de="Ihr Weg zur Deutschkenntnis. Meistern Sie Deutsch, navigieren Sie zu neuen Möglichkeiten." data-es="Su camino hacia el dominio del alemán. Domine el alemán, navegue hacia nuevas oportunidades.">
+                            Ihr Weg zur Deutschkenntnis. Meistern Sie Deutsch, navigieren Sie zu neuen Möglichkeiten.
+                        </p>
+                    </div>
+                    <div class="footer-section">
+                        <h4 data-de="Kurse" data-es="Cursos">Kurse</h4>
+                        <ul>
+                            <li><a href="private_tutoring_in_mexico_city.html" data-de="🇲🇽 Privatunterricht CDMX" data-es="🇲🇽 Clases Privadas CDMX">🇲🇽 Privatunterricht CDMX</a></li>
+                            <li><a href="group_courses_mexico_city.html" data-de="🇲🇽 Gruppenkurse CDMX" data-es="🇲🇽 Cursos Grupales CDMX">🇲🇽 Gruppenkurse CDMX</a></li>
+                            <li><a href="gruppenkurse_mexiko_stadt.html" data-de="🇩🇪 Deutsche Gruppenkurse CDMX" data-es="🇩🇪 Cursos Grupales Alemanes CDMX">🇩🇪 Deutsche Gruppenkurse CDMX</a></li>
+                            <li><a href="private-tutoring.html" data-de="Private Tutoring" data-es="Tutoría Privada">Private Tutoring</a></li>
+                            <li><a href="group-courses.html" data-de="Group Courses" data-es="Cursos Grupales">Group Courses</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 data-de="Support" data-es="Soporte">Support</h4>
+                        <ul>
+                            <li><a href="contact.html" data-de="Kontakt" data-es="Contacto">Kontakt</a></li>
+                            <li><i class="fas fa-envelope"></i> info@eldritch-lighthouse.com</li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61560077576842" target="_blank"><i class="fab fa-facebook"></i> <span data-de="Folgen Sie uns auf Facebook" data-es="Síguenos en Facebook">Folgen Sie uns auf Facebook</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-separator"></div>
+                
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-section">
+                        <h4 data-de="Kontakt & Rechtliches" data-es="Contacto y Legal">Kontakt & Rechtliches</h4>
+                        <ul>
+                            <li><a href="imprint.html" data-de="Impressum" data-es="Aviso Legal">Impressum</a></li>
+                            <li><a href="privacy.html" data-de="Datenschutzerklärung" data-es="Política de Privacidad">Datenschutzerklärung</a></li>
+                            <li><a href="terms.html" data-de="AGB" data-es="Términos y Condiciones">AGB</a></li>
+                            <li><a href="terms.html#cancellation-policy" data-de="Stornierungsbedingungen" data-es="Política de Cancelación">Stornierungsbedingungen</a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">&copy; 2025 Eldritch Lighthouse Language Academy. <span data-de="Alle Rechte vorbehalten." data-es="Todos los derechos reservados.">Alle Rechte vorbehalten.</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+        
+        // Language switching functionality
+        function switchLanguage(lang) {
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update content
+            document.querySelectorAll('[data-de], [data-es]').forEach(element => {
+                if (element.hasAttribute(`data-${lang}`)) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = element.getAttribute(`data-${lang}`);
+                    } else {
+                        element.innerHTML = element.getAttribute(`data-${lang}`);
+                    }
+                }
+            });
+            
+            // Update page language
+            document.documentElement.lang = lang;
+        }
+        
+        // Scroll animations
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // Event listeners
+        window.addEventListener('scroll', handleScrollAnimation);
+        window.addEventListener('load', handleScrollAnimation);
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // CTA tracking
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                console.log('CTA clicked:', this.textContent);
+            });
+        });
+    </script>
+</body>
+</html>
